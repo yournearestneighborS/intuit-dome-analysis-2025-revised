@@ -1,8 +1,8 @@
-# Los Angeles Clippers arena-store analysis
+# Los Angeles Clippers Arena-Store Analysis
 
-A reproducible, privacy-conscious analysis of net sales and store-entry activity at Intuit Dome during three 2025 Clippers–Nuggets playoff games.
+A revised reproducible and privacy-conscious analysis of net sales and store-entry activity at the Intuit Dome during three 2025 Clippers–Nuggets playoff games.
 
-The project separates what the data **supports** from what it cannot identify. It calculates transaction economics at the transaction level, normalizes demand to each game's scheduled tipoff, validates every store join, and does not claim individual visitor-to-purchaser conversion because the supplied identifiers do not connect.
+This project separates what the data **supports** from what it cannot identify. It calculates transaction economics at the transaction level, normalizes demand to each game's scheduled tipoff, validates every store join, and does not claim individual visitor-to-purchaser conversion as the supplied identifiers do not connect.
 
 ## Results at a glance
 
@@ -20,22 +20,6 @@ The project separates what the data **supports** from what it cannot identify. I
 | Store-entry identifier linkage | **Unavailable: 0 matching IDs** |
 
 ![Net sales by business vertical](assets/revenue_mix.png)
-
-## What changed in this revision
-
-- Replaced the mean line-item value with a true transaction-level average.
-- Corrected “1.7% better” to **1.69× / 69.1% higher** for food & beverage versus retail sales.
-- Replaced unsupported pregame/halftime/quarter labels with hours relative to scheduled tipoff.
-- Distinguished revenue peaks from transaction-count peaks.
-- Removed the unsupported store-entry-to-purchase conversion claim.
-- Validated store joins as many-to-one and reconciled row counts and net sales before and after mapping.
-- Flagged 94 duplicate-looking sales lines rather than deleting them without a source line identifier.
-- Documented 1,169 zero-net lines, 578 zero-net transactions, an empty pricing-map sheet, incomplete checkpoint mapping, and identifier incompatibility.
-- Rebuilt the notebook with repository-relative paths and embedded, executed outputs.
-- Added automated tests, a data dictionary, methodology notes, a multi-page report, and an editable slide deck.
-- Removed direct identifiers and the raw workbook from the public package.
-
-See [docs/AUDIT_NOTES.md](docs/AUDIT_NOTES.md) for the complete issue-to-fix map.
 
 ## Repository structure
 
@@ -70,21 +54,13 @@ Open `notebook/intuit_dome_store_analysis.ipynb`. It reads the included aggregat
 ## Deliverables
 
 - `notebook/intuit_dome_store_analysis.ipynb` — executed analysis with embedded outputs.
-- `report/intuit_dome_arena_store_analysis.pdf` — six-page written report.
-- `report/intuit_dome_arena_store_analysis.docx` — editable report source.
-- `report/intuit_dome_arena_store_analysis.pptx` — eight-slide deck with editable native charts and table.
-- `report/intuit_dome_arena_store_analysis_slides.pdf` — portable deck export.
+- `report/intuit_dome_arena_store_analysis.pdf` — written report. (WIP)
+- `report/intuit_dome_arena_store_analysis.pptx` — slide deck with native charts and table. (WIP) 
+- `report/intuit_dome_arena_store_analysis_slides.pdf` — portable deck export. (WIP)
 
 ## Rebuild from the private workbook
 
-The original XLSX is intentionally excluded. If you are authorized to use it, place it under `data/raw/` or point to it anywhere on your machine:
-
-```bash
-python scripts/build_public_data.py --workbook "/path/to/challenge-dataset.xlsx"
-python scripts/render_charts.py
-python scripts/build_notebook.py
-python -m unittest discover -s tests -v
-```
+The original XLSX is intentionally excluded!
 
 The build writes aggregate tables only. It never exports customer accounts, NBA IDs, event IDs, transaction IDs, product IDs, exact transaction timestamps, distance-to-venue values, or app-creation timestamps.
 
