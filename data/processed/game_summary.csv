@@ -1,0 +1,4 @@
+game_date,game_label,net_sales,transactions,customers,average_transaction_value,median_transaction_value,zero_net_transactions,scheduled_tipoff,official_game_duration
+2025-04-24,Game 3 · Apr 24,433679.02,11218,6584,38.65921,27.5,119,2025-04-24 19:00:00,2:19
+2025-04-26,Game 4 · Apr 26,387335.12,10444,6384,37.086856,25.0,255,2025-04-26 15:00:00,2:30
+2025-05-01,Game 6 · May 1,334776.6,9684,5811,34.570074,25.0,204,2025-05-01 19:00:00,2:13

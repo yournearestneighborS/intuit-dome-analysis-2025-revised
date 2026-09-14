@@ -1,0 +1,4 @@
+games_purchased,customers,net_sales,average_customer_spend,median_customer_spend,average_transactions,customer_share,sales_share
+1,15214,859265.61,56.478612,36.0,1.510319,0.903713,0.743444
+2,1298,140981.72,108.614576,75.0,3.271957,0.077101,0.121979
+3,323,155543.41,481.558545,132.25,12.758514,0.019186,0.134577

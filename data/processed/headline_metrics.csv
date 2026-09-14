@@ -1,0 +1,13 @@
+metric,value,definition
+net_sales,1155790.74,Sum of line-item NetAmount across all three games
+transactions,31346.0,Unique game/transaction pairs
+customers,16835.0,Unique purchasing CustomerAccount values
+food_and_beverage_sales,725426.0,Net sales attributed to Food And Beverage
+retail_sales,428929.5,Net sales attributed to Retail
+service_sales,1435.24,Net sales attributed to Service Items
+food_and_beverage_share,0.627645,Food And Beverage share of net sales
+retail_share,0.371113,Retail share of net sales
+fnb_to_retail_ratio,1.691248,Food And Beverage sales divided by Retail sales
+fnb_percent_higher_than_retail,0.691248,Relative difference: Food And Beverage versus Retail sales
+store_entry_events,49223.0,Store-entry event rows; not attendance
+unique_store_entry_ids,20603.0,Unique pseudonymous NBAId values in StoreEntries

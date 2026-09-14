@@ -1,0 +1,4 @@
+business_vertical,net_sales,line_items,customer_count,attributable_transactions,average_attributable_transaction,median_attributable_transaction,average_customer_spend,median_customer_spend,sales_share
+Food And Beverage,725426.0,51580,15388,26421,27.456417,21.75,47.142319,33.75,0.627645
+Retail,428929.5,8502,4035,5255,81.623121,40.0,106.30223,55.0,0.371113
+Service Items,1435.24,287,231,282,5.089504,3.98,6.21316,4.2,0.001242

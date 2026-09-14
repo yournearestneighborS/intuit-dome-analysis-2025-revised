@@ -1,0 +1,4 @@
+store_type,net_sales,transactions,average_transaction_value,median_transaction_value,customers,sales_share
+Concessions & Retail,691902.16,25274,27.376045,21.75,14922,0.59864
+Retail,423616.25,4790,88.43763,46.0,3745,0.366516
+Concessions,40272.33,1282,31.413674,25.875,1006,0.034844

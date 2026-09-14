@@ -1,0 +1,21 @@
+area,metric,value,status,note
+Sales,Line-item rows,60369.0,Info,Three sales worksheets combined
+Sales,Unique transactions,31346.0,Pass,Game date + TransactionId
+Sales,Exact duplicate-looking line rows,94.0,Review,"No line ID is available, so these are flagged and retained"
+Sales,Zero-net line rows,1169.0,Review,Retained; may reflect complimentary or fully discounted items
+Sales,Negative-net line rows,0.0,Pass,None observed
+Sales,Missing transaction timestamps,0.0,Pass,Datetime coercion check
+Mapping,Sales rows mapped to a store,60369.0,Pass,100% of sales rows
+Mapping,Store-entry mapping rate,0.896634,Review,Two checkpoint labels have no StoreNames row
+Mapping,Unmapped store-entry events,5088.0,Review,D'USSÉ Cognac Club and Club Grey Goose
+Store entries,Event rows,49223.0,Info,"Rows are entry events, not attendees"
+Store entries,Unique entry IDs,20603.0,Info,A person can generate multiple entry events
+Store entries,Missing entry IDs,3549.0,Review,Missing IDs are excluded from repeat-person calculations
+Store entries,Repeat identified events beyond first per person/game,22468.0,Review,Calculated only where NBAId is present; rows are not attendance
+Customer map,Rows,38676.0,Info,CustomerIDs worksheet
+Customer map,Exact duplicate rows,16747.0,Review,Deduplicate before any account-level use
+Customer map,Sales rows with mapped CustomerAccount,54453.0,Review,Coverage is incomplete
+Linkage,Store-entry IDs present in CustomerIDs,0.0,Blocker,Zero overlap; store-entry-to-purchase conversion is not identifiable
+Linkage,Arena-entry IDs present in CustomerIDs,0.0,Blocker,Zero overlap; arena-entry-to-purchase conversion is not identifiable
+Arena entries,Missing entry IDs,1028.0,Review,Event counts include these rows; unique-ID counts do not
+Workbook,Arena Pricing Map rows,0.0,Review,Worksheet is empty
