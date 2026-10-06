@@ -55,8 +55,8 @@ Open `notebook/intuit_dome_store_analysis.ipynb`. It reads the included aggregat
 
 - `notebook/intuit_dome_store_analysis.ipynb` — executed analysis with embedded outputs.
 - `report/intuit_dome_arena_store_analysis.pdf` — written report. (WIP)
-- `report/intuit_dome_arena_store_analysis.pptx` — slide deck with native charts and table. (WIP) 
-- `report/intuit_dome_arena_store_analysis_slides.pdf` — portable deck export. (WIP)
+- `report/intuit_dome_arena_store_analysis.pptx` — slide deck with native charts and table.
+- `report/intuit_dome_arena_store_analysis_slides.pdf` — portable deck export.
 
 ## Rebuild from the private workbook
 
